@@ -48,16 +48,6 @@ return [
             'retry_after' => 90,
         ],
 
-        'sqs' => [
-            'driver' => 'sqs',
-            'key' => env('SQS_KEY', 'your-public-key'),
-            'secret' => env('SQS_SECRET', 'your-secret-key'),
-            'prefix' => 'https://sqs.us-east-1.amazonaws.com/174067202377',
-            'queue' => env('SQS_QUEUE', 'localhost_operator_dashboard'),
-            'region' => env('SQS_REGION', 'us-east-1'),
-            'timeout' => 5
-        ],
-
         'redis' => [
             'driver' => 'redis',
             'connection' => 'default',
